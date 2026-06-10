@@ -9,6 +9,7 @@ html {
 
 body {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +19,7 @@ body {
 #dispScreen {
   width: 70vw;
   height: 70vh;
-  min-height: 500px;
+  min-height: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -27,6 +28,7 @@ body {
   border: solid rgb(102, 100, 100) 1rem;
   border-radius: 5%;
   padding: 0.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.9rem;
   transition: 0.1s ease-in-out;
 }
@@ -123,23 +125,57 @@ body {
 
 /* ----- media querries ------ */
 
+/* 1300px */
 @media (max-width: 81.25rem) {
   html {
-    font-size: 62.5%;
+    font-size: 60.5%;
   }
   /* #dispScreen {
    
   } */
 }
 
+/* 1024px */
+@media (max-width: 64rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 900px */
 @media (max-width: 56.25rem) {
   html {
     font-size: 46.875%;
   }
 }
-
+/* 650px */
 @media (max-width: 40.63rem) {
   html {
     font-size: 31.3%;
+  }
+}
+
+/* max-h-619 */
+@media (max-height: 38.69rem) {
+  html {
+    font-size: 31.5%;
+  }
+}
+
+/* max-w-404px */
+@media (max-width: 25.3rem) {
+  html {
+    font-size: 20%;
+  }
+}
+/* max-height-400px */
+@media (max-height: 26.5rem) {
+  html {
+    font-size: 30%;
+  }
+
+  #dispScreen {
+    width: 55vw;
+    min-height: 300px;
   }
 }
