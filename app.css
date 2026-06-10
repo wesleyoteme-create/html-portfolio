@@ -155,20 +155,27 @@ body {
   }
 }
 
-/* max-h-619 */
-@media (max-height: 38.69rem) {
+/* max-h-800px */
+@media (max-height: 50rem) {
   html {
-    font-size: 31.5%;
+    font-size: 52.5%;
   }
 }
 
-/* max-w-404px */
-@media (max-width: 25.3rem) {
+/* max-h-731px */
+@media (max-height: 45.69rem) {
   html {
-    font-size: 20%;
+    font-size: 40%;
   }
 }
-/* max-height-400px */
+
+/* max-w-452px */
+@media (max-width: 28.3rem) {
+  html {
+    font-size: 29.5%;
+  }
+}
+/* max-height-424px */
 @media (max-height: 26.5rem) {
   html {
     font-size: 30%;
