@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.7%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#dispScreen {
+  width: 70vw;
+  height: 70vh;
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(102, 100, 100) 1rem;
+  border-radius: 5%;
+  padding: 0.5rem;
+  margin-bottom: 0.9rem;
+  transition: 0.1s ease-in-out;
+}
+#dispScreen:hover {
+  background-color: rgba(17, 17, 17, 0.904);
+}
+.defaultScreen {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 255);
+}
+
+.blackScreen {
+  color: rgb(37, 37, 37);
+  background-color: rgb(48, 47, 47);
+}
+
+.dispText {
+  font-size: 9rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.btn {
+  width: 10rem;
+  height: 5rem;
+  border-radius: 10%;
+  background-color: rgb(127, 127, 128);
+  color: white;
+  font-size: 1.8rem;
+  border: 0;
+  transition: 0.1s ease-in-out;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.527);
+  border: solid rgb(170, 170, 170) 0.25rem;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    90deg,
+    red,
+    yellow,
+    blue,
+    green,
+    indigo,
+    violet,
+    #00bfff,
+    white,
+    red,
+    yellow,
+    blue
+  );
+  background-size: 100rem;
+  animation: gradient-animation 10s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-backgroundDefault {
+  background: linear-gradient(135deg, blue, #00bfff, blue);
+  background-size: 250%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ----- media querries ------ */
+
+@media (max-width: 81.25rem) {
+  html {
+    font-size: 62.5%;
+  }
+  /* #dispScreen {
+   
+  } */
+}
+
+@media (max-width: 56.25rem) {
+  html {
+    font-size: 46.875%;
+  }
+}
+
+@media (max-width: 40.63rem) {
+  html {
+    font-size: 31.3%;
+  }
+}
