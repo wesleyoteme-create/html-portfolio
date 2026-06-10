@@ -6,9 +6,6 @@ let stoIntId;
 let loadingTimer;
 let intId1;
 const dateScrn = new Date();
-let dayOW = dateScrn.getDay();
-let errTo;
-
 
 const daysOfWeek = [
   "Sunday",
@@ -19,7 +16,9 @@ const daysOfWeek = [
   "Friday",
   "Saturday",
 ];
-
+let dayOW = dateScrn.getDay();
+let errTo;
+console.log(dayOW);
 onSwitch.addEventListener("click", () => {
   console.log("Turning on screen...");
 
@@ -31,7 +30,7 @@ onSwitch.addEventListener("click", () => {
 
       return (intId1 = 1);
     }
-     int0();
+    int0();
 
     intId1 = setInterval(() => {
       dispScreen.classList.add("gradient-background");
